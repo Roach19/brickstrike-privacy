@@ -1,267 +1,101 @@
-# Privacy Policy — Brick Strike
+# Brick Strike Privacy Policy
 
-> **Source document, not a published policy.** This is the text the hosted
-> privacy policy will be built from. It is not yet published anywhere, and the
-> application contains no link to it — see
-> [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md).
->
-> The developer identity and contact address in §11 were supplied by the
-> product owner and are filled in. **Still outstanding before publication:** a
-> publicly reachable URL for this document, and the `PRIVACY_POLICY_URL`
-> configuration that makes the in-app link appear.
+**Last updated: October 29, 2026**  
+**Application:** Brick Strike (`com.brickstrike.game`)  
+**Developer:** Гунин Иван Владимирович  
+**Privacy contact:** [bubblegu44@yandex.ru](mailto:bubblegu44@yandex.ru)  
+**Русская версия:** [Политика конфиденциальности](privacy-ru.md)
 
-**Last updated:** *(set on publication)*
-**Russian version:** [PRIVACY_POLICY_RU.md](PRIVACY_POLICY_RU.md)
+## 1. About the game
 
----
+Brick Strike is an Android puzzle game where players place shapes on an 8×8 board, clear lines, complete levels, and unlock rewards. Version 0.4.0 includes Classic, Strike, Journey, Expeditions, picture reveals, albums, and collectible cosmetics.
 
-## 1. What this application is
+The game does not require registration, sign-in, or a continuous internet connection. Brick Strike has no player cloud accounts or proprietary gameplay backend. However, when analytics is enabled, the app may transmit technical information and usage events to AppMetrica as explained below.
 
-Brick Strike is an Android puzzle game. You place blocks on an 8×8 board and clear
-full rows and columns. It is played offline: the game itself never needs a
-network connection, and no gameplay feature depends on one.
+## 2. Information stored on your device
 
-There is no account, no login, no cloud profile and no game backend. Nothing you
-do in the game is associated with an identity you created.
+The following information is stored locally to operate the game:
 
-## 2. Data stored on your device
+- best scores, points, number of games played, and other game statistics;
+- unfinished game state, including board, available pieces, score, and progress;
+- Journey levels and stars, and Expedition missions and mastery progress;
+- achievements, challenges, and earned rewards;
+- crystals earned and spent, and purchased or selected in-game cosmetic sets;
+- picture and album reveal progress, unlocked secrets, and gallery contents;
+- sound, vibration, language, theme, analytics, and advertising-related choices.
 
-The following is stored locally, on your device only, and is not transmitted by
-the application:
+These game saves are used locally and are not uploaded to a Brick Strike-operated server. **However, certain in-game actions may be reflected in analytics events** when analytics is enabled (sections 3–4).
 
-| What | Why |
-|---|---|
-| Best score | Shown on the home screen and during play |
-| Sound enabled | Your settings choice |
-| Vibration enabled | Your settings choice |
-| Selected theme | Your settings choice |
-| Selected language | Your settings choice |
-| Games played | Aggregate play statistics |
-| Total score | Aggregate play statistics |
-| Crystals earned and spent | The game's offline currency |
-| Skins owned and selected | Which board appearance you bought and wear |
-| Arcade stars per level | Which levels you finished and how well |
-| Pictures revealed | Your Picture Reveal gallery |
-| Advertising data-processing choice | Your privacy choice (see §6) |
-| Analytics choice | Your analytics choice (see §3) |
+Crystals are earned through gameplay. They cannot be purchased with real money, transferred to other players, or redeemed for monetary value. Version 0.4.0 contains no real-money in-app purchases.
 
-Crystals are an **offline currency earned by playing**. They cannot be bought,
-cannot be transferred, have no monetary value, and exist only in this
-application on this device. There are no in-app purchases of any kind.
+Unfinished games in supported modes may be saved and restored after closing the application or an Android process termination. Clearing app data removes local progress. Availability of copies made by Android's backup mechanisms depends on your device and operating-system settings.
 
-Your unfinished game is deliberately **not** saved. Closing the application
-means the game in progress is lost; your best score and statistics are kept.
+## 3. Analytics and crash diagnostics
 
-Uninstalling the application removes this data.
+Brick Strike uses **AppMetrica (Yandex)** to understand how the game is used, improve its features, and diagnose errors. When analytics is enabled, the app and SDK may transmit:
 
-## 3. Analytics
+- gameplay and interface usage events;
+- app launch and session information and app version;
+- technical information about the device and operating system;
+- crash reports, error information, and app-performance diagnostics;
+- install-attribution information, where supported by the app store;
+- technical identifiers available to the SDK under its configuration, and network information necessary to connect to the service.
 
-Brick Strike uses **AppMetrica**, an analytics service provided by Yandex, to
-understand how the game is used and to receive crash diagnostics.
+Technical information may include the Android version, device model or characteristics, and network IP address. The service provider may use the IP address to infer an approximate region. **The absence of an advertising ID does not mean that no other technical identifiers are processed.**
 
-When analytics is configured, the AppMetrica SDK may collect and transmit:
+You can disable the **Share usage analytics** setting in Brick Strike. Your choice is stored on your device and is intended to stop future analytics transmissions by the app and SDK. Disabling analytics does not automatically delete information transmitted before the setting was changed. Analytics is enabled by default in this version; disabling it does not restrict gameplay.
 
-- application usage events, listed in §4;
-- session information and technical application and device information gathered
-  automatically by the SDK;
-- Java/Kotlin crash diagnostics, which the SDK collects by default;
-- install attribution information, where the Play Store or RuStore makes it
-  available (see §8).
+## 4. Gameplay events that may be sent
 
-**You can turn analytics off.** Settings → *Share usage analytics* stops this
-application sending events and instructs the AppMetrica SDK to stop sending
-what it gathers on its own, including sessions and crash reports. The choice is
-stored on your device and takes effect immediately. It is independent of your
-advertising choice (§6): you may allow one and refuse the other.
+With analytics enabled, the app may report events such as a game starting or ending, a piece being placed, lines cleared, a new high score, or a settings change. Version 0.4.0 also includes analytics for new features, including Strike results and picture/album reveal or completion events.
 
-Analytics is on by default. Turning it off never changes how the game plays.
-
-The precise field list the SDK gathers automatically is defined by Yandex, not
-by this application, and is not independently enumerated here.
-
-The application configuration deliberately **excludes**:
-
-- the AppMetrica advertising-identifier module;
-- the AppMetrica location-collection implementation;
-
-and sets AppMetrica location tracking to off.
-
-This application does not send Yandex a name, an email address, a phone number,
-a contact list, photos, files, messages or calendar data, because it never asks
-for or holds any of those.
-
-**This policy does not claim the analytics SDK is fully anonymous or that it
-collects no device information.** It collects technical and device information
-as described above.
-
-## 4. What the game reports
-
-Brick Strike reports gameplay and interface events. These are categories, not a
-complete field specification:
-
-- application launch;
-- a game started, restarted or finished;
-- a piece placed;
-- lines cleared;
-- a new high score;
-- the settings screen opened;
-- the interface language changed;
-- rewarded advertisement lifecycle (offered, started, completed);
-- an interstitial advertisement displayed;
-- a game continued after a rewarded advertisement.
-
-These events carry gameplay values such as a score or a piece type. They do not
-carry your identity, your location, or the contents of your device.
+Events may contain gameplay values such as game mode, score, lines cleared, combos, progress stage, or action result. The game does not request players' names, phone numbers, email addresses, contacts, photos, or personal-file contents for analytics transmission.
 
 ## 5. Advertising
 
-Brick Strike includes the **Yandex Mobile Ads** SDK.
+The project includes the **Yandex Mobile Ads SDK**. **Advertising is disabled in the public Brick Strike 0.4.0 release build:** the app does not show advertisements or offer ad viewing in exchange for in-game rewards. Separate development/test configurations may use demo ads; these configurations are not intended for release users.
 
-**Production advertising is not enabled in the current release.** During
-development and testing the application uses only Yandex's public demonstration
-advertisement units, which serve test creatives and earn nothing.
+Advertising-related data processing choices may be stored locally. They do not replace the separate analytics setting. The presence of an ad SDK in the project does not by itself mean that this version displays ads. If ads are enabled in a future release, this policy will be updated to describe the relevant data processing.
 
-When production advertising is eventually enabled, it is intended to consist of:
+## 6. Identifiers and location
 
-- **Rewarded advertisements** (see §5.1);
-- **Interstitial advertisements** (see §5.2).
+Under the configuration of version 0.4.0, Brick Strike does not request Android precise or approximate location permissions, and AppMetrica location tracking is disabled. The Android `com.google.android.gms.permission.AD_ID` permission is excluded from the app configuration.
 
-Advertising involves the advertising network receiving a request and returning a
-creative. What Yandex processes as part of serving an advertisement is governed
-by Yandex's own terms, not by this application.
+However, integrated libraries may use other app or device identifiers, including an App Set ID, depending on the SDK provider's behavior. A server connection also makes an IP address technically available, from which an approximate region may be inferred. This does not mean the app accesses your device's GPS coordinates.
 
-### 5.0 Where advertising is not shown
+## 7. Recipients of information
 
-This application **does not serve advertising in the European Economic Area,
-Iceland, Liechtenstein, Norway or Switzerland.** Serving personalised
-advertising there requires a consent framework that this application does not
-implement, so instead of asking for consent it cannot properly record, the
-application does not request advertisements at all in those countries.
+- **Yandex / AppMetrica** receives the usage and diagnostic information described above when analytics is enabled.
+- **Yandex Mobile Ads** is included in the project, but ads are disabled in version 0.4.0. The SDK is not used to load advertisements in this version; any technical data processing by the integrated library depends on its configuration.
+- **Google Play components and Play Install Referrer** may provide install-source information to integrated libraries when installed through an applicable app store.
 
-The region is determined from your mobile network or SIM country. If neither is
-available, the application treats the region as unknown and **does not** serve
-advertising. No advertising identifier and no location data is used to make this
-determination.
+Brick Strike does not operate its own player-account database. The developer does not sell player data or independently provide it to advertisers. Third-party service providers also handle information under their own applicable terms.
 
-### 5.1 Rewarded advertisements
+## 8. Data security
 
-When a game ends, an eligible player **may choose** to watch a rewarded
-advertisement to continue that same game once. If the advertisement is actually
-watched and the advertising network confirms the reward, 25% of the board's
-currently occupied cells are cleared and the same game resumes with its score
-intact.
+Local game saves rely on Android's application-data storage and protection mechanisms. Analytics data is transmitted through AppMetrica; according to Yandex's documentation, AppMetrica encrypts data in transit. We do not claim that all local game files or all third-party SDK data are independently encrypted with an additional mechanism.
 
-Watching is entirely optional. The game can always be ended or restarted without
-watching anything, and declining costs nothing. A player may continue a given
-game at most once this way.
+## 9. Data retention and deletion
 
-### 5.2 Interstitial advertisements
+Local game data remains on your device until you clear app data or uninstall the game. Whether a copy can be restored from an Android system backup depends on Android and your device settings.
 
-Interstitial advertisements may appear only at natural breaks between games —
-after a game has finally ended and you have chosen to play again or to return to
-the home screen. They never interrupt play.
+Retention periods for information already transmitted to AppMetrica are governed by the provider's terms and service settings. Turning analytics off stops subsequent transmission but does not constitute a deletion request for previously transmitted information.
 
-The current pacing rules are at most one interstitial after every third
-completed game, and never less than three minutes apart. These are product
-settings and may be adjusted later based on how the game is actually played;
-they are described here as current behaviour, not as a permanent guarantee.
+You can contact **bubblegu44@yandex.ru** with inquiries or requests concerning your data, including deletion requests. Because the game does not have player accounts, the developer may not be technically able to link a specific analytics record to an email sender. Requests will be assessed in light of available technical means and applicable obligations. Third-party retention and backups may be subject to the provider's terms.
 
-## 6. Your advertising choice
+## 10. Children and intended audience
 
-Settings → Privacy lets you allow or decline advertising data processing. Your
-choice is stored on your device, can be changed at any time, and does not affect
-gameplay in any way.
+Brick Strike is intended for a general audience of approximately 13 years of age and older and was not designed specifically for young children. The game does not ask for a date of birth or offer account creation. The developer takes applicable age requirements into account when defining the target audience in app stores.
 
-Until you make an explicit choice, no choice is assumed. Leaving the screen
-without choosing is not treated as agreement.
+## 11. Contact and changes to this policy
 
-**This choice does not control analytics.** AppMetrica operates independently of
-it and has its own separate opt-out: Settings → *Share usage analytics*,
-described in §4. The two are independent, so you may allow one and refuse the
-other.
+**Developer:** Гунин Иван Владимирович  
+**Privacy inquiries:** [bubblegu44@yandex.ru](mailto:bubblegu44@yandex.ru)
 
-This application does **not** implement a certified Consent Management Platform,
-writes no IAB TCF values, and makes no claim of TCF, IAB or GDPR compliance.
+This policy will be updated if app features or data-processing practices change. The last-updated date will also be changed. The current policy will remain accessible at the public address supplied in Google Play and within the app.
 
-## 7. Advertising identifier
+## 12. Third-party documentation
 
-The Android advertising identifier permission
-(`com.google.android.gms.permission.AD_ID`) is **removed from the current
-application configuration**, and the application requests no advertising
-identifier.
-
-This describes the current configuration. It is not a permanent commitment about
-every future version; a version that used an advertising identifier would say so
-here first.
-
-### App Set ID
-
-`play-services-appset` and an AppMetrica App Set ID module are present as
-dependencies of the bundled SDKs. An App Set ID is a per-developer,
-user-resettable identifier; it is **not** an advertising identifier and not the
-Android advertising ID.
-
-Brick Strike's own code never requests an App Set ID. Whether the bundled SDKs read one
-is determined by their vendors and is not independently verified here.
-
-## 8. Install attribution
-
-The Play Install Referrer library is present as a dependency of the analytics
-SDK, and the application's package visibility allows the analytics SDK to see
-the Google Play application and the RuStore install-referrer provider.
-
-This can make **install attribution information** — broadly, where an install
-came from — available to the SDK stack. It is not precise location data and not
-an advertising identifier. Brick Strike's own code does not read it.
-
-## 9. Location
-
-Brick Strike does **not** request the Android precise or approximate location
-permissions, and none appear in the application.
-
-In the current technical configuration:
-
-- the AppMetrica location-collection implementation is excluded;
-- `play-services-location` is absent;
-- AppMetrica location tracking is set to off;
-- Yandex Mobile Ads location tracking is set to off.
-
-This means the application does not collect device location.
-
-It does not mean no geographic information of any kind can exist anywhere: any
-network service, including the analytics and advertising services above, can
-infer coarse information such as a country from the network connection itself.
-That is a property of using the internet, not something this application
-collects or controls.
-
-## 10. Children
-
-Brick Strike is a general-audience puzzle game. It is not designed for or directed at
-young children, and its intended minimum audience is approximately 13 years old.
-
-Age ranges are treated differently in different places, and some jurisdictions
-treat people well above 13 as children. Nothing in this section is a legal
-determination.
-
-Brick Strike does not knowingly collect information from children. It asks for no age,
-no date of birth, and no personal details of any kind.
-
-## 11. Contact
-
-- Developer: Гунин Иван Владимирович
-- Privacy contact: bubblegu44@yandex.ru
-
-## 12. Changes to this policy
-
-When this policy changes, the updated version will be published at the same
-address and the "last updated" date above will change.
-
-## 13. Third-party services
-
-- **AppMetrica** (Yandex) — analytics and crash diagnostics.
-- **Yandex Mobile Ads** (Yandex) — advertising, not enabled in the current
-  release.
-- **Google Play services** components and the **Play Install Referrer** library,
-  present as dependencies of the above.
-
-Each is governed by its provider's own privacy terms.
+- [AppMetrica — Google Play Data safety guidance](https://appmetrica.yandex.com/docs/en/data-security/google-data-safety)
+- [Yandex.Metrica and AppMetrica Terms of Use](https://yandex.com/legal/metrica_termsofuse/en/)
+- [Google Play User Data policy](https://support.google.com/googleplay/android-developer/answer/10144311?hl=en)
